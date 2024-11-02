@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>album 2</title>
+</head>
+<style>
+    .gallery {
+  --s: 150px; /* control the size */
+  --g: 10px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3,auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #60c4ff;
+}
+h1{
+    text-decoration: none;
+   }
+footer{
+    margin-top: 50px;
+}
+
+
+
+
+
+</style>
+<body>
+    <h1><center>PHOTOBOX</center></h1>
+    <div class="gallery">
+    <img src="1.jpeg" alt="">
+    <img src="2.jpeg" alt="a waterfall and many rocks">
+    <img src="3.jpeg" alt="a house on a mountain">
+    <img src="4.jpeg" alt="sime pink flowers">
+    <img src="5.jpeg" alt="big rocks with some trees">
+    <img src="6.jpeg" alt="a waterfall, a lot of tree and a great view from the sky">
+    <img src="4.jpeg" alt="a cool landscape">
+    <img src="1.jpeg"inside a town between two big buildings">
+    <img src="5.jpeg" alt="a great view of the sea above the mountain">
+  </div>
+        
+
+        
+       
+ 
+</body>
+<footer>Created By Adin❤️</footer>
+</html>
